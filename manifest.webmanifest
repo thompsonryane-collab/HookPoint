@@ -1,6 +1,6 @@
 {
-  "name": "HOOKPOINT — pitch engine",
-  "short_name": "HOOKPOINT",
+  "name": "HookPoint - Pitch Engine v7.1",
+  "short_name": "HookPoint",
   "description": "Pitch predictive intelligence built on the Pitch Anything method: plan the room, score the odds, stack the frames, log what clients say.",
   "start_url": "./index.html",
   "scope": "./",
