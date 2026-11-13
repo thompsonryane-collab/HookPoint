@@ -1,5 +1,8 @@
 # Changelog
 
+## v7.25 — No version in the window title
+- The window title and the app name are now **HookPoint - Pitch Engine**, with no version number. The version still shows in the app's own bar. An app installed from an earlier build keeps the name it was installed with until it is reinstalled or renamed.
+
 ## v7.24 — Pitches library
 - New **Pitches** tile in the Deal section, in two parts.
 - **Saved pitches**: pick a pitch and tap Save this pitch to keep a copy of it as it stands now (with the date and its odds). A saved copy can be restored as a new pitch, downloaded as a `.json` file, imported back from that file, or removed. Restoring never overwrites a live pitch.
