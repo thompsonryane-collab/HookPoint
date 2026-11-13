@@ -1,5 +1,24 @@
 # Changelog
 
+## v7.24 — Pitches library
+- New **Pitches** tile in the Deal section, in two parts.
+- **Saved pitches**: pick a pitch and tap Save this pitch to keep a copy of it as it stands now (with the date and its odds). A saved copy can be restored as a new pitch, downloaded as a `.json` file, imported back from that file, or removed. Restoring never overwrites a live pitch.
+- **Documents**: upload one or several files of the same types as Product — HTML, Excel (.xlsx), Word (.docx), PDF, PowerPoint (.pptx) and MP4, up to 250 MB each. Each document can be linked to a pitch, filtered by pitch, downloaded, sent to the Product analyzer, set as the plan's product material (Use in the plan), or removed. PDFs and videos can also be opened in a new tab.
+- Saved copies and documents are stored in the browser's IndexedDB on the device. They are not part of Backup and do not sync between devices.
+
+## v7.23 — Hook icon without the tile
+- The app icon is now the gold hook and sparkle on its own, on a transparent background, with no teal tile behind it: `icons/icon.svg`, `icon-192.png`, `icon-256.png`, `icon-512.png`, `favicon-16.png` and `favicon-32.png`. The hook is enlarged to fill the space the tile took.
+- Unchanged: `apple-touch-icon.png` (iOS) and the two maskable icons, which Android requires to be a filled square.
+
+## v7.22 — Method named only as Pitch it
+- The author credit is removed from the four instructions the app sends to Claude that still carried it (Strategist, Assistant and the two Reports AI prompts). No file in the build names the source book or its author.
+
+## v7.21 — "Pitch it" throughout
+- Every remaining mention of the method by its old name now reads **Pitch it**: two lines of report text (the portfolio subtitle and the scoring paragraph) and six instructions the app sends to Claude (Strategist, Narrative, Assistant, Reports AI analysis, Product analyzer).
+
+## v7.20 — Guide heading
+- The Training guide heading now reads **Pitch it, as HookPoint hones it**.
+
 ## v7.19 — Strategist input stays on the bottom edge
 - The Strategist's text box and Send button are pinned flush to the bottom of the screen. They used to float above a strip where the conversation showed through underneath. The scroll-to-top button moves up so it no longer sits on Send.
 
