@@ -1,6 +1,6 @@
 # HOOKPOINT — pitch engine
 
-Pitch predictive intelligence built on the *Pitch Anything* method. One file runs everywhere:
+Pitch predictive intelligence built on the *Pitch it* method. One file runs everywhere:
 the phone in your pocket, a Windows desktop, a 1920×1200 room screen, or a wall display.
 
 - **Plan the room** — venue, decision maker, opposing frame, your frame, the people and how they decide.
