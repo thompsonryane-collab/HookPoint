@@ -7,6 +7,8 @@ the phone in your pocket, a Windows desktop, a 1920×1200 room screen, or a wall
 - **Score the odds** — every point explained: frame match, status setup, the four-frame stack, neediness in the words, what the client has said. Target: 90% before anyone sits down.
 - **Shape the deal** — Narrative, Stack (intrigue · prize · time · moral authority · the three-point close · the silence), Strategist (ask Claude for moves and apply the patch).
 - **Learn from the room** — log what clients say; the engine reads the frame and the signal and rates your reply.
+- **Read the product** — the Product analyzer takes an HTML, Excel, Word, PDF, PowerPoint or MP4 file and writes a first pitch assessment you can add to a new or existing pitch (needs Claude connected).
+- **Keep the record** — the Pitches tile saves dated copies of a pitch and stores the documents that go with it; Reports builds a decision brief, pitch review, debrief or portfolio review for print, Word or HTML.
 - **Train** — the nine-chapter Guide, the Story deck, the Dictionary, the Dojo.
 
 Everything is local. No server, no account. Data lives in the browser's storage on each device; **Backup** in the bar exports and imports it.
@@ -31,7 +33,7 @@ CHANGELOG.md               version history
 ```bash
 git init
 git add .
-git commit -m "HOOKPOINT v6.7"
+git commit -m "HookPoint"
 git branch -M main
 git remote add origin https://github.com/<you>/hookpoint.git
 git push -u origin main
@@ -51,16 +53,17 @@ It opens `index.html` in Edge or Chrome **app mode** (own window, no tabs, own s
 Pass `laptop`, `desktop`, or `studio` to size the window. Inside the app, the **monitor icon** in the bar switches between Fit · Laptop 1366×768 · Desktop 1920×1200 · Studio 2560×1440 · Present mode. Full notes: [docs/DESKTOP.md](docs/DESKTOP.md).
 
 ### 4. Connect Claude (optional)
-**Admin** tile → paste an Anthropic API key. It unlocks live narrative generation, the Strategist, and card reading. The key stays in local storage on that device only. Without a key everything else works; the Strategist returns template moves.
+**Admin** tile → paste an Anthropic API key. It unlocks live narrative generation, the Strategist, the Assistant, the Product analyzer, AI analysis in Reports, and card reading. The key stays in local storage on that device only. Without a key everything else works; the Strategist returns template moves.
 
 ## Data, privacy, backups
 - Storage is per device and per origin. Phone and PC do not sync automatically; use **Backup → Export** on one and **Import** on the other.
+- Saved pitch copies and documents in the **Pitches** tile are kept in the browser's IndexedDB on the device. They are not part of Backup; download the ones you need to keep elsewhere.
 - Client names, responses and notes you log are yours and stay on the device. Nothing is transmitted except what you send to Anthropic when you use the Claude features.
 - See [docs/DATA-AND-BACKUP.md](docs/DATA-AND-BACKUP.md) for the storage keys, what a backup contains, and how versions migrate.
 
 ## Releasing a new build
 1. Replace `index.html` with the new build (keep the file name).
-2. Bump `CACHE` in `sw.js` (e.g. `hookpoint-v6.8`) so installed phones fetch the new shell.
+2. Set `CACHE` in `sw.js` to the new version (e.g. `hookpoint-v7.26`) so installed phones fetch the new shell. It should match the version shown in the app's bar.
 3. Add a line to `CHANGELOG.md`, commit, push. Pages redeploys automatically.
 
 ## License
